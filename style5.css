@@ -1,0 +1,179 @@
+html,body{
+    background-color: rgb(234, 253, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0px;
+    right: 0px;
+    padding: 0%;
+ 
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif, justify}
+.fa-pagelines,.fa-bookmark ,.fa-snowflake-o {font-size:200px}
+th{
+    color: white;
+   /* border-radius: 10px;*/
+}
+td,th {
+    border: 1px solid rgb(11, 2, 94);
+    text-align: center;
+    word-wrap:break-word; 
+  }
+  td{
+    padding: 7px;
+    max-width: 25px;
+  }
+ 
+  th {
+    background: rgba(2, 148, 58, 0.945);
+    border-color: white;
+    height: 120px;
+  }
+
+
+table {
+    background-color: rgb(175, 245, 197);
+    width: fit-content;
+  color: black;
+  table-layout:fixed;
+  display: block;
+  left: 0;
+	right: 0;
+  font-size: 10px;
+}
+
+
+.searchdiv{
+  width: 1000px;
+  
+	left: 0;
+	right: 0;
+	margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+input{
+  display: inline-block;
+}
+.input_h{
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+  
+}
+.flex-container{
+	width: 90%;
+	
+	margin: 0 auto;
+	display: -webkit-flex; /* Safari */		
+	display: flex; /* Standard syntax */
+}
+.flex-container .column{
+	padding: 10px;
+	background: #dbdfe5;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+}
+.flex-container .column.bg-alt{
+	background: #b4bac0;
+}
+@media screen and (max-width: 400px) {
+  .flex-container .column{
+    padding: 0px;
+    background: #dbdfe5;
+    -webkit-flex: 0; /* Safari */
+    -ms-flex: 0; /* IE 10 */
+    flex: 0; /* Standard syntax */
+  }
+  .searchdiv{
+    width: auto;
+    border: 2px solid black;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color: grey;
+  }
+  .flex-container{
+    width: 100%;
+  }
+  html,body
+  {
+    overflow-x: scroll;
+   text-overflow: clip;
+  }
+}
+.col-sm{
+  text-align: center;
+}
+.search_button,.reset_button{
+
+  border: none;
+  font-size: 15px;
+position: absolute;
+  padding: 2px;
+  width: 200px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(181, 247, 181);
+  border-radius: 6px;
+  border: 3px solid green;
+  transition:0.2s;
+}
+.search_button:hover,.reset_button:hover,.sort_button:hover,.download_button:hover{
+  background-color: rgb(139, 248, 139);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  
+}
+.select_drop{
+
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
+option{
+  padding: 10px;
+
+  text-align: center;
+}
+option:hover{
+  background-color: blanchedalmond;
+}
+select{
+  background-color: rgb(201, 238, 218);
+  height: 30px;
+  text-align: center;
+  align-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 3px;
+  
+}
+select:hover{
+  background-color: rgb(187, 248, 203);
+}
+.sort_button,.download_button{
+  background-color: rgb(181, 247, 181);
+  border-radius: 6px;
+  border: 3px solid green;
+width: 200px;
+text-align: center;
+align-self: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 15px;
+transition:0.2s;
+}
+.fa-download{
+  font-size: 38px;
+  color: grey;
+  padding: 0px 0px;
+}
+h2{
+  font-family: 'Times New Roman', Times, serif;
+}

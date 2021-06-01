@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Allergen Database</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif, justify}
+.fa-pagelines,.fa-bookmark ,.fa-snowflake-o {font-size:200px}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="start.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="dbname.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Databases</a>
+    <a href="columns.html" class="w3-bar-item w3-button w3-padding-large w3-white">About Columns</a>
+    <a href="table.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Database</a>
+    <a href="tutorial.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tutorial</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="dbname.html" class="w3-bar-item w3-button w3-padding-large">About Databases</a>
+    <a href="columns.html" class="w3-bar-item w3-button w3-padding-large">About Columns</a>
+    <a href="table.php" class="w3-bar-item w3-button w3-padding-large">Database</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-green w3-center" style="padding:128px 16px">
+  <h2 class="w3-margin w3-jumbo">Alleropedia</h2>
+  <p class="w3-xlarge">Comprehensive database for Allergens</p>
+  <button onclick="location.href='table.php'" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>SPECIES</h1>
+      <p class="w3-text-grey" style="text-align: justify;">Any substance, often a protein, that induces an abnormal immunological response involving IgE antibodies is called allergen. Allergens originate from a wide variety of species of plants, animals (mammals, mites, insects), and fungi. The name of the allergen source species is shown under column Species. (scientific name: genus and species). </p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-snowflake-o  w3-padding-10 w3-text-green w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>COMMON NAME</h1>
+      <p class="w3-text-grey" style="text-align: justify;">The common name refers to the colloquial name of a allergen species. This name  known to the general public or is based on any language other than that of zoological nomenclature. It is also called binomial name since it is usually comprised of two parts, i.e. the genus name and the specific epithet. The common name of the allergen species is displayed under the column named Common Name.
+        </p>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>BIoCHEMICAL NAME</h1>
+        <p class="w3-text-grey" style="text-align: justify;">
+            A large number of allergens, usually proteins are capable of inducing allergic symptoms, including severe, even life-threatening reactions in  individuals. These proteins can cause immunoglobulin E (IgE)-mediated reactions. This column lists down the name of protein that cause allergic reaction.
+            </p>
+      </div>
+  
+      <div class="w3-third w3-center">
+          <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Fourth Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-snowflake-o  w3-padding-10 w3-text-green w3-margin-right"></i>
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>MW(SDS-PAGE)</h1>
+        <p class="w3-text-grey" style="text-align: justify;">As the primary structure is the most foundational level of protein structure, protein molecular weight is a key parameter to confirm. Having a robust understanding of the unmodified protein molecular weight can help in initial assessments of the biomolecule’s functionality. This could include Metabolic regulation, Binding and transportation of small molecular species etc. Molecular weight (MW) of a protein can be estimated using the SDS-PAGE (sodium dodecyl sulfate polyacrylamide gel electrophoresis) method. SDS-PAGE separates proteins according to their molecular weight, based on their differential rates of migration through a sieving matrix (a gel) under the influence of an applied electrical field. </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>DESCRIPTION</h1>
+        <p class="w3-text-grey" style="text-align: justify;">This column provides a small description about the proteins from allergens that causes allergy. This data can be helpful to study the reaction of proteins.</p>
+      </div>
+  
+      <div class="w3-third w3-center">
+          <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sixth Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-snowflake-o  w3-padding-10 w3-text-green w3-margin-right"></i>
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>SOURCE</h1>
+        <p class="w3-text-grey" style="text-align: justify;">A source may contain several allergens, and each one may possess a number of potential areas of a protein that interact with the B and T cell receptors on lymphocytes, which stimulate their own specific IgE. This column lists out the sources of allergens.
+          </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Seventh Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <h1>IUIS NAME</h1>
+          <p class="w3-text-grey" style="text-align: justify;">
+            The WHO/IUIS Allergen Nomenclature Sub-Committee is responsible for maintaining and developing a unique, unambiguous and systematic nomenclature for allergenic proteins. The nomenclature is based on the Linnean system and is applied to all allergens. The  systematic nomenclature is used  to define a common language for scientists. This column species the IUIS name of the allergens.</p>
+        </div>
+    
+        <div class="w3-third w3-center">
+            <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Eighth Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-third w3-center">
+          <i class="fa fa-snowflake-o  w3-padding-10 w3-text-green w3-margin-right"></i>
+        </div>
+    
+        <div class="w3-twothird">
+          <h1>ACCESSION NUMBER </h1>
+          <p class="w3-text-grey" style="text-align: justify;">It is a  unique identifier for a sequence record. An accession number applies to the complete record and is usually a combination of a letter(s) and numbers. Some accessions can be longer depending on the type of sequence record. This column displays the accession number of proteins which are generally depicted using 3 letters followed by 5 numerals or 3 letters followed by 7 numerals.
+
+        </p>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+  <!-- Tenth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>LINK</h1>
+        <p class="w3-text-grey" style="text-align: justify;">This column is directs the user to a website from which more information regarding the allergen species can be retrieved. This is added for the convenience of user to navigate to other website for more information.</p>
+      </div>
+  
+      <div class="w3-third w3-center">
+          <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Eleventh Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-snowflake-o  w3-padding-10 w3-text-green w3-margin-right"></i>
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>ROUTE OF ALLERGEN EXPOSURE</h1>
+        <p class="w3-text-grey" style="text-align: justify;">allergens such as foods can enter the body via the gastrointestinal tract and can be absorbed and can also be injected naturally via insect bites. Therefore , the route of allergen exposure influences the types of allergic symptoms subsequently experienced, with exposure to the allergens giving rise to different  symptoms. The most common routes of allergen exposure are inhalation (pollen, spores, fecal particles), ingestion (foods), or injection (insect bite), but exposure can also occur by other routes such as skin contact or infection (Ascaris).  This column lists the route of allergen exposure which specifies the channel or way through which the allergic reaction can occur. For example, aero allergens give rise to respiratory symptoms.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Twelfth Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <h1>GROUP1</h1>
+          <p class="w3-text-grey" style="text-align: justify;">
+            Group names include the genus and protein type or IUIS designation.  Multiple isoforms or close homologues of proteins contained in the database are displayed based on taxonomy of the source organism and sequence identity of the proteins.</p>
+        </div>
+    
+        <div class="w3-third w3-center">
+            <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Thirteenth Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-third w3-center">
+          <i class="fa fa-snowflake-o w3-padding-10 w3-text-green w3-margin-right"></i>
+        </div>
+    
+        <div class="w3-twothird">
+          <h1>ALLERGENECITY </h1>
+          <p class="w3-text-grey" style="text-align: justify;"> Western blot  detects viral antigens (proteins usually on the surface of species which induce immune responses) using antibodies (antibodies are released in reponse to antigens) against those proteins while ELISA (Enzyme-Linked ImmunoSorbent Assay) is a related technique, but instead of using antibodies to detect virus antigen, it uses virus antigen to detect antibody. 
+            This column displays the information about the IgE binding only (western blot, ELISA) without biological activity; or IgE binding plus biological activity test as measured by basophil activation or IgE plus Skin Prick test.
+            
+        </p>
+        </div>
+      </div>
+    </div>
+
+     <!-- Fourteenth Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>GENEID</h1>
+        <p class="w3-text-grey" style="text-align: justify;">
+            It is an identifier for a gene per the NCBI Entrez database. 
+            Entrez Gene generates unique integers (GeneID) as stable identifiers for genes and other loci for a subset of model organisms (remains the same even if info about the locus changes such as gene symbol, genomic position, etc.). It tracks those identifiers and uses them to integrate multiple types of information including nomenclature, summary descriptions, accessions of gene-specific and gene product-specific sequences, chromosomal localization, reports of pathways and protein interactions, associated markers and phenotypes. 
+            </p>
+      </div>
+  
+      <div class="w3-third w3-center">
+          <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fifteenth Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-snowflake-o  w3-padding-10 w3-text-green w3-margin-right"></i>
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>LENGTH</h1>
+        <p class="w3-text-grey" style="text-align: justify;">The number of amino acids is shown for each allergen entry.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sixteenth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>HABITAT</h1>
+      <p class="w3-text-grey" style="text-align: justify;">Habitat is place where the source organism that likely to cause allergenic reaction due to allergenic protein or a community of these organisms live, including all living and nonliving factors or conditions of the surrounding environment.
+      This column lists down the habitat of the source organism that is likely to cause allergic reaction. </p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Seventeenth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-snowflake-o  w3-padding-10 w3-text-green w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>ORGANISM TYPE</h1>
+      <p class="w3-text-grey" style="text-align: justify;">This column displays the type of organism() the the source of allergen). For example the organism can be a plant, animal or a microorganism that can possibly cause allergic reaction.
+        </p>
+    </div>
+  </div>
+</div>
+
+<!-- Eighteenth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>AUTHORITY</h1>
+        <p class="w3-text-grey" style="text-align: justify;">
+            This column lists the name of the person who described or named the taxon of the source organism. </p>
+      </div>
+  
+      <div class="w3-third w3-center">
+          <i class="fa fa-pagelines w3-padding-10 w3-text-green" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

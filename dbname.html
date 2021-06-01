@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Allergen Database</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif, justify}
+.fa-pagelines,.fa-bookmark ,.fa-book , .fa-sticky-note, .fa-database,.fa-clone,.fa-edit,.fa-server {font-size:200px}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="start.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="dbname.html" class="w3-bar-item w3-button w3-padding-large w3-white">About Databases</a>
+    <a href="columns.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Columns</a>
+    <a href="table.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Database</a>
+    <a href="tutorial.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tutorial</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="dbname.html" class="w3-bar-item w3-button w3-padding-large">About Databases</a>
+    <a href="columns.html" class="w3-bar-item w3-button w3-padding-large">About Columns</a>
+    <a href="table.php" class="w3-bar-item w3-button w3-padding-large">Database</a>
+    <a href="tutorial.html" class="w3-bar-item w3-button w3-padding-large">Tutorial</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-green w3-center" style="padding:128px 16px">
+  <h2 class="w3-margin w3-jumbo">Alleropedia</h2>
+  <p class="w3-xlarge">Comprehensive database for Allergens</p>
+  <button onclick="location.href='table.php'" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h2>ALLERGEN NOMENCLATURE DATABASE</h2>
+      <h5 class="w3-padding-32" style="text-align: justify;">Maintained by: WHO/IUIS Allergen Nomenclature Sub-Committee <br><br>
+        <a href="http://www.allergen.org/" target="_blank">Click here to visit the website</a>
+        </h5>
+      <p class="w3-text-grey" style="text-align: justify;">Allergens are provided with a unique, unambiguous, and systematic nomenclature which has been developed and maintained by the World Health Organization (WHO) and International Union of Immunological Societies (IUIS) Allergen Nomenclature Sub-committee. The nomenclature is based on the Linnean system, and an allergen, which satisfies certain biochemical and immunological criteria, is included in the WHO/IUIS nomenclature.This database provides a systematic and unambiguous nomenclature for proteins that induce IgE-mediated allergies in humans. Allergens are included after a detailed review by the Allergen Nomenclature Sub-Committee.  Each record includes basic data on biochemical properties, sequences, and allergenicity. </p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <i class="fa fa-book w3-padding-64 w3-text-green" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-sticky-note  w3-padding-64 w3-text-green w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h2>ALLERGEN ONLINE DATABASE</h2>
+      <h5 class="w3-padding-32" style="text-align: justify;">Maintained by: Food Allergy Research and Resource Program, Department of Food Science and Technology, University of Nebraska-Lincoln, Lincoln, NE, USA<br><br>
+        <a href = "http://www.allergenonline.org/" target="_blank" >Click here to visit the website</a>
+        </h5>
+      <p class="w3-text-grey" style="text-align: justify;">It is used by the agricultural industry for the allergenicity assessment of proteins planned to be introduced into genetically modified crops. Putative allergen sequences are collected from the National Center for Biotechnology Information (NCBI) database by searching for “allerg*,” supplemented by data from the WHO/IUIS Allergen Nomenclature and Allergome4 databases and filtered, based on peer-reviewed publications, by a panel of expert reviewers. 
+        AllergenOnline is updated every year . For each allergen, data on source organism, common name, IUIS official nomenclature, protein length, class of allergen like food allergen, contact allergen, etc., and a link to the NCBI protein (GenPept) database are provided. 
+     </p>
+    </div>
+  </div>
+</div>
+
+<!--Third Grid-->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h2>COMPREHENSIVE PROTEIN ALLERGEN RESOURCE (COMPARE) DATABASE</h2>
+      <h5 class="w3-padding-32" style="text-align: justify;">Maintained by: Protein Allergens, Toxins and Bioinformatics Committee, Health and Environmental Sciences Institute <br><br>
+        <a href="http://db.comparedatabase.org/" target="_blank">Click here to visit the website</a>
+        </h5>
+      <p class="w3-text-grey" style="text-align: justify;">The Comprehensive Protein Allergen Resource (COMPARE) is a database of allergen sequences created as a tool for food safety assessment similar to AllergenOnline. It was first published in 2017 by the Health and Environmental Sciences Institute, an international consortium comprising academia, government, industry, and nongovernment organizations.
+        It provides an annually updated freely downloadable list of allergen sequences that is created by first identifying putative allergen sequences in the NCBI protein database by an automated search using keyword-based filters. Genuine allergens are then identified by a panel of peer reviewers. Database records contain sequences, accession numbers, and key publications, but no allergy-related data. </p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <i class="fa fa-database w3-padding-64 w3-text-green" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-clone  w3-padding-64 w3-text-green w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h2>ALLERGOME DATABASE</h2>
+      <h5 class="w3-padding-32" style="text-align: justify;">Maintained by: Allergy Data Laboratories, Latina, Italy<br><br>
+        <a href = "https://www.allergome.org/" target="_blank">Click here to visit the website</a>
+        </h5>
+      <p class="w3-text-grey" style="text-align: justify;">Allergome houses the most comprehensive collection of data on allergen sources and allergens, and is useful for scientists, clinicians, and the industry.
+        Allergome represents an extensive repository of information on allergen molecules causing IgE-mediated (allergic, atopic) diseases . The database comprises comprehensive data on WHO/IUIS-approved allergens along with other non-recognized allergens. These allergenic molecules are selected and curated from the published literature and web-based resources. It also contains data on allergenic sources based on whether they possess identified molecules or not. Allergome documents information on allergen and isoallergens/isoforms along with their sequences. 
+        It is updated regularly and allergen data curated from literature is documented.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h2>EPPO GLOBAL DATABASE</h2>
+      <h5 class="w3-padding-32" style="text-align: justify;">Maintained by: Secretariat of the European and Mediterranean Plant Protection Organization (EPPO). <br><br>
+        <a href="https://gd.eppo.int/" target="_blank">Click here to visit the website</a>
+        </h5>
+      <p class="w3-text-grey" style="text-align: justify;">EPPO is responsible for management of the EPPO code system, previously known as Bayer codes. The system is an encoded identifier used by EPPO, in a system designed to uniquely identify organisms that are important to agriculture and crop protection.. The aim of the database is to provide all pest-specific information that has been produced or collected by EPPO. The database contents are constantly being updated by the EPPO Secretariat. 
+        It contains Basic information for more than 90 000 species. In this database For each species: scientific names, synonyms, common names in different languages, taxonomic position, and EPPO Codes are provided. 
+         </p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <i class="fa fa-edit w3-padding-64 w3-text-green" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Sixth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-server  w3-padding-64 w3-text-green w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h2>CABI Invasive Species Compendium DATABASE</h2>
+      <h5 class="w3-padding-32" style="text-align: justify;">
+        <a href = "https://www.cabi.org/ISC" target="_blank" >Click here to visit the website</a>
+        </h5>
+      <p class="w3-text-grey" style="text-align: justify;">The Invasive Species Compendium (ISC) in CABI (Centre for Agriculture and Bioscience International) is an encyclopedic resource that brings together a wide range of different types of science-based information to support decision-making in invasive species management worldwide. Full datasheets: comprise fully referenced sections on taxonomy and nomenclature, distribution, habitat, identification, biology and ecology, species associations, pathways for introduction, impacts and management, complemented by images and maps, and supported by abstracts and full text articles. These datasheets are authored by species experts and peer reviewed. </p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

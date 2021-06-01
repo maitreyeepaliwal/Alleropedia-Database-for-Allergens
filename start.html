@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Allergen Database</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif, justify}
+.fa-pagelines,.fa-bookmark  {font-size:200px}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="start.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="dbname.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Databases</a>
+    <a href="columns.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Columns</a>
+    <a href="table.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Database</a>
+    <a href="tutorial.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tutorial</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="dbname.html" class="w3-bar-item w3-button w3-padding-large">About Databases</a>
+    <a href="columns.html" class="w3-bar-item w3-button w3-padding-large">About Columns</a>
+    <a href="table.php" class="w3-bar-item w3-button w3-padding-large">Database</a>
+    <a href="tutorial.html" class="w3-bar-item w3-button w3-padding-large">Tutorial</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-green w3-center" style="padding:128px 16px">
+  <h2 class="w3-margin w3-jumbo">Alleropedia</h2>
+  <p class="w3-xlarge">Comprehensive database for Allergens</p>
+  <button onclick="location.href='table.php'" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About the database</h1>
+      <h5 class="w3-padding-32" style="text-align: justify;">Considering the strengths and weaknesses of some widely used, freely accessible databases of allergens, this database is generated encompassing major allergen related information by taking base of 4 such databases. Added features or functionalities provide more usability and ease to access and use the metadatabase.</h5>
+      <p class="w3-text-grey" style="text-align: justify;">The database comprises of data from: Comprehensive Protein Allergen Resource (COMPARE), AllergenOnline (FARRP Allergen Database), WHO/IUIS Allergen Nomenclature Database and	Allergome databases. We have added 3 additional columns: Authority, Habitat and Organism Type that are not directly present in any of these four databases. We have also worked on to add data in some existing comumns  with missing data. We are continuously working on to update the data in the database.   </p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <i class="fa fa-pagelines w3-padding-64 w3-text-green" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-bookmark  w3-padding-64 w3-text-green w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Motivation Behind</h1>
+      <h5 class="w3-padding-32" style="text-align: justify;">The substantial technological advances in the field of genomics and proteomics with the tremendous improvements in analytical methods has led to a significant progress in the area of allergy research. </h5>
+      <p class="w3-text-grey" style="text-align: justify;">Efficient storage and data management is expected to be very useful for data analysis, evaluation and can prove its usability to biologists, bioinformaticians, scientists, students, researchers, etc. The existing databases of allergens are very informative and contain overlapping data, but address different user groups and list allergens based on varying criteria. The incessant accumulation of this data raises the requirement of a metadatabase to aid in assessing the safety of proteins that may present a potential risk of allergenic cross-reactivity </p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

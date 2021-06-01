@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Allergen Database</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif, justify}
+.fa-pagelines,.fa-bookmark ,.fa-book , .fa-sticky-note, .fa-database,.fa-clone {font-size:200px}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="start.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="dbname.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Databases</a>
+    <a href="columns.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Columns</a>
+    <a href="table.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Database</a>
+    <a href="#" class="w3-bar-item w3-button  w3-padding-large w3-white">Tutorial</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="dbname.html" class="w3-bar-item w3-button w3-padding-large">About Databases</a>
+    <a href="columns.html" class="w3-bar-item w3-button w3-padding-large">About Columns</a>
+    <a href="table.php" class="w3-bar-item w3-button w3-padding-large">Database</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+<header class="w3-container w3-green w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Alleropedia</h1>
+    <p class="w3-xlarge">Comprehensive database for Allergens</p>
+    <button onclick="location.href='table.php'" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+  </header>
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h5 class="w3-padding-32" style="text-align: justify;">This website and the database is developed considering the need of a common metadatabase that consolidates data from some existing databases on allergens with some additional information from different reputed journals and databases added manually and data processed computationally.</h5>
+        <h5 style="text-align: justify;">Additional features and functionalities have been added to make it easy to read, access, analyse and further use the data.</h5>
+        <br>
+        <h3 class="w3-text-grey" style="text-align: center;">This section has been added to provide the users a complete knowledge for understandig the database and the applications features.  </h3>
+    </div>
+  </div>
+
+  <hr style="width: 20%; background-color: green; height: 5px; margin: auto;">
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1 style="text-align: center;">TUTORIAL</h1>
+        
+    </div>
+
+  <div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h2>1. <u>Information sources: </u></h2>
+      <h5 class="w3-padding-32" style="text-align: justify; padding-left: 5%;">This database takes its major data from 4 databases:
+        <ol>
+            <li><i>  Allergen Nomenclature Database</i></li>
+            <li><i>  Allergen Online Database</i></li>
+            <li><i>  Comprehensive Protein Allergen Resource (COMPARE) Database</i></li>
+            <li><i>  Allergome Database</i></li>
+        </ol>
+        <br>
+         You can find information about them <a href="dbname.html" style="text-decoration: underline; font-style: oblique;"> here</a> </h5>
+         <h5 style="text-align: justify; padding-left: 5%;"> The EPPO Global Database , Invasive Species Compendium (CABI - Centre for Agriculture and Bioscience International) and NCBI resources have also been used for contributing the data to this database. </h5>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-30 w3-container">
+    <div class="w3-content">
+        <h2>2. <u>Columns in the database: </u></h2>
+        <h5 class="w3-padding-32" style="text-align: justify; padding-left: 5%;">The present database stores its data in 18 different columns. 
+          <ul>
+              <li><i>Binomial name of species</i></li>
+              <li><i>Common Name of allergen source</i></li>
+              <li><i>Biochemical name of allergenic proteins.</i></li>
+              <li><i>Authority</i></li>
+              <li><i>Habitat of allergen source</i></li>
+              <li><i>Organism Type of allergen source.</i></li>
+              <li><i>Molecular weight of allergenic proteins.</i></li>
+              <li><i>Description about allergenic proteins.</i></li>
+              <li><i>Different  sources of allergen.</i></li>
+              <li><i> IUIS name of allergenic proteins.</i></li>
+              <li><i>Accession number of allergenic protein.</i></li>
+              <li><i>Length of allergenic protein.</i></li>
+              <li><i>Link to website.</i></li>
+              <li><i>Route of allergen exposure </i></li>
+              <li><i>Group (includes genus of source of allergen and allergenic protein)</i></li>
+              <li><i>Allergencity of allergenic proteins.</i></li>
+              <li><i>GeneID for organism.</i></li>
+          </ul>
+          <br>
+          You can get information about each of these columns <a href="columns.html" style="text-decoration: underline; font-style: oblique;"> here</a> </h5>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h2>3. <u>Features offerred: </u></h2>
+        <h5 class="w3-padding-32" style="text-align: justify; padding-left: 5%; padding-right: 5%;">We have the following basic features to extract usable information from the database:
+          <ol>
+              <li><b>Filter text for different fields</b> <br> <p class="w3-text-grey">This features allows users to display only limited data entries according to their selection of filters for different columns. Pattern matching instead of exact full text match is used, thus increasing the database usability.</p></li>
+              <img src="filter.jpg" style="width: 80%; border: solid grey 4px; "> 
+              <br><br>
+              <h6>To filter text for different fileds,
+              <ol>
+                  <li> Enter the text in the different input boxes for the fileds you want.</li>
+                  <li> You can add single or multiple filters.</li>
+                  <li>Click on 'Search' Button.</li>
+                  <li> The data table gets modified according to the selected text filters.</li>
+                  <li>To reset, click on the 'Reset' button. </li>
+              </ol>
+              </h6>
+              <br>
+              <br>
+              <br>
+              <li><b>Filter fields according to starting characters</b><br> <p class="w3-text-grey">This feature allows users to selct a field and a letter from the drop down menus to display only those data rows which have the particular field starting with the specific letter only. </p></li>
+              <img src="character.JPG" style="width: 40%; border: solid grey 4px; "> 
+              <br><br>
+              <h6>To filter fields according to starting charaters,
+              <ol>
+                  <li>Select the column from the drop down menu</li>
+                  <li>Select the letter from the adjacent drop down menu.</li>
+                  <li>Click on 'Choose options' button.</li>
+                  <li>The data table gets modified with the chosen filed entries starting with the chosen letter</li>
+              </ol>
+              </h6>
+              <br>
+              <br>
+              <br>
+              <li><b>Download the database.</b><br> <p class="w3-text-grey">This feature allows users to download the complete database to access it later from their own systems or use it for their own research, analysis or any other purpose. The database gets downloaded in the form of an excel file.  </p></li>
+              <img src="download.JPG" style="width: 30%; border: solid grey 4px; "> 
+              <br><br>
+              <h6>To download the database, click on 'Download' button
+            
+              </h6>
+              <br>
+            </ol>
+          </h5>
+    </div>
+  </div>
+  <hr style="width: 20%; background-color: green; height: 5px; margin: auto;">
+  <br>
+  <div class="w3-row-padding w3-padding-30 w3-container">
+    <div class="w3-content">
+        <p class="w3-text-grey" style="text-align: justify;">The data in this database is obtained from various reputed legitimate sources. We have taken reasonable care to ensure that, and to the best of our knowledge, material information contained herein is in accordance with the facts and contains no omission likely to affect its understanding.
+            Please note that we make no assurance that the presented data is free from errors.
+            We do not intend on making any representation or warranty, express or implied, as to the accuracy or completeness of this database and will not have any liability towards any other person resulting from your use of this data.The information contained herein may be subject to changes without prior notice. We do not accept any form of liability, neither legally nor financially, for loss (direct or indirect) caused by the understanding and/or use of this report or its content.  </p>
+        </div>
+        </div>
+</body>
+</html>
