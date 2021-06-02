@@ -26,7 +26,7 @@ Considering the strengths and weaknesses of some widely used, freely accessible 
 1. Provide a tutorial for the better understanding to use the database and its features.
 <br/>
 
-## Novely
+## Novelty
 *	There is no existing database or metadetabase of Allergens that provides such a comprehensive database of allergen related information. 
 *	Additional features and functionalities have been added to make it easy to read, access, analyse and further use the data.
 *	The three columns:  Authority, Habitat and Organism Type are not present in any of the 4 databases.  
