@@ -33,7 +33,7 @@ Considering the strengths and weaknesses of some widely used, freely accessible 
 <br/>
 
 Since, Github pages only hosts static page, the link for database is not operational. Hence, to obtain the database and the interface as explained in the [tutorial](https://maitreyeepaliwal.github.io/Alleropedia-Database-for-Allergens/tutorial.html), you need to download the repo documents, import the csv/sql files in phpmyadmin and run this on the local host.
-I am attaching database screenshots of the database tab for your consideration.
+I am attaching screenshots of the database tab for your consideration.
 <br/><br/><br/>
 ![image](https://user-images.githubusercontent.com/65955491/120426835-732c7d80-c38e-11eb-9c66-c4e59309d635.png)
 <br/><br/><br/>
